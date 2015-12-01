@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TwitchSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="RootView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0uD-gd-Cz5" userLabel="GamesTableView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.31372549019607843" green="0.14901960784313725" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TwitchGameCell" rowHeight="114" id="w6L-32-hxd" userLabel="TwitchGameCell" customClass="TwitchGameCell" customModule="TwitchSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="114"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w6L-32-hxd" id="Vxy-7K-l0Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="113.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ie7-4t-ztl">
+                                                    <rect key="frame" x="18" y="18" width="58" height="77.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ie7-4t-ztl" secondAttribute="height" multiplier="9:12" id="7kX-Sp-Wza"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLP-qg-3aC" userLabel="GameNameLabel">
+                                                    <rect key="frame" x="106" y="18" width="466" height="20.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Views:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2o-2G-bTF" userLabel="ViewsLabel">
+                                                    <rect key="frame" x="106" y="46.5" width="466" height="20.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Channels:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLp-Rw-dSu" userLabel="ChannelsLabel">
+                                                    <rect key="frame" x="106" y="75" width="466" height="20.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="OLp-Rw-dSu" firstAttribute="leading" secondItem="ie7-4t-ztl" secondAttribute="trailing" constant="30" id="3ft-wT-PBo"/>
+                                                <constraint firstItem="ie7-4t-ztl" firstAttribute="top" secondItem="Vxy-7K-l0Y" secondAttribute="topMargin" constant="10" id="9HS-jl-YeL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="OLp-Rw-dSu" secondAttribute="trailing" constant="20" id="Euk-3D-5D3"/>
+                                                <constraint firstItem="F2o-2G-bTF" firstAttribute="leading" secondItem="ie7-4t-ztl" secondAttribute="trailing" constant="30" id="S3n-Qd-2Dx"/>
+                                                <constraint firstItem="OLp-Rw-dSu" firstAttribute="bottom" secondItem="ie7-4t-ztl" secondAttribute="bottom" id="Ued-To-T12"/>
+                                                <constraint firstItem="F2o-2G-bTF" firstAttribute="centerY" secondItem="ie7-4t-ztl" secondAttribute="centerY" id="WpD-sI-Ciq"/>
+                                                <constraint firstItem="YLP-qg-3aC" firstAttribute="top" secondItem="ie7-4t-ztl" secondAttribute="top" id="d5E-U0-p29"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="F2o-2G-bTF" secondAttribute="trailing" constant="20" id="guP-Sj-gJu"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="YLP-qg-3aC" secondAttribute="trailing" constant="20" id="l88-A8-dpW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ie7-4t-ztl" secondAttribute="bottom" constant="10" id="oYM-m1-p7t"/>
+                                                <constraint firstItem="ie7-4t-ztl" firstAttribute="leading" secondItem="Vxy-7K-l0Y" secondAttribute="leadingMargin" constant="10" id="un1-9G-oFP"/>
+                                                <constraint firstItem="YLP-qg-3aC" firstAttribute="leading" secondItem="ie7-4t-ztl" secondAttribute="trailing" constant="30" id="vqc-Df-qNE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="channelsLabel" destination="OLp-Rw-dSu" id="dd6-vw-qoX"/>
+                                            <outlet property="gameImageView" destination="ie7-4t-ztl" id="o0s-Aw-2eS"/>
+                                            <outlet property="nameLabel" destination="YLP-qg-3aC" id="fqK-jd-rrb"/>
+                                            <outlet property="viewsLabel" destination="F2o-2G-bTF" id="2BQ-Pq-VVC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgY-om-ILJ" userLabel="SplashView" customClass="SGImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TwitchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oUa-CZ-WGZ">
+                                        <rect key="frame" x="200" y="238" width="200" height="124"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="6au-bA-oRW">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="124" id="zHJ-fu-hkU">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="62"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="oUa-CZ-WGZ" firstAttribute="centerY" secondItem="QgY-om-ILJ" secondAttribute="centerY" id="KGb-2f-w6r"/>
+                                    <constraint firstItem="oUa-CZ-WGZ" firstAttribute="centerX" secondItem="QgY-om-ILJ" secondAttribute="centerX" id="hIz-nH-bQP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.31372549020000001" green="0.14901960780000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0uD-gd-Cz5" secondAttribute="trailing" constant="-20" id="MDH-c9-nLZ"/>
+                            <constraint firstItem="QgY-om-ILJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="WQk-fC-iPk"/>
+                            <constraint firstItem="0uD-gd-Cz5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dQO-sw-RoH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0uD-gd-Cz5" secondAttribute="bottom" id="sBv-8U-iS1"/>
+                            <constraint firstItem="0uD-gd-Cz5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="svn-uw-jmA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QgY-om-ILJ" secondAttribute="trailing" constant="-20" id="t2m-DI-9Ux"/>
+                            <constraint firstItem="QgY-om-ILJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="tqs-sG-T9j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QgY-om-ILJ" secondAttribute="bottom" id="v6z-RF-QM8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameTableView" destination="0uD-gd-Cz5" id="yY0-bD-xWX"/>
+                        <outlet property="splashView" destination="QgY-om-ILJ" id="glQ-FH-A9e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="217"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TwitchLogo" width="666" height="411"/>
+    </resources>
+</document>

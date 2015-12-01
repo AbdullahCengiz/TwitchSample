@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		999439F5B21AD8F670DBBD5B /* Pods_TwitchSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897F2F4B3FDC2FC3869DA6EB /* Pods_TwitchSample.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ED034CC41C0CAB66000E72A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED034CC31C0CAB66000E72A2 /* AppDelegate.swift */; };
+		ED034CC61C0CAB66000E72A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED034CC51C0CAB66000E72A2 /* MainViewController.swift */; };
+		ED034CC91C0CAB66000E72A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED034CC71C0CAB66000E72A2 /* Main.storyboard */; };
+		ED034CCB1C0CAB66000E72A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED034CCA1C0CAB66000E72A2 /* Assets.xcassets */; };
+		ED034CCE1C0CAB66000E72A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED034CCC1C0CAB66000E72A2 /* LaunchScreen.storyboard */; };
+		ED034CDE1C0CF683000E72A2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED034CDD1C0CF683000E72A2 /* Reachability.swift */; };
+		ED034CE11C0CFE5C000E72A2 /* TwitchSampleCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED034CE01C0CFE5C000E72A2 /* TwitchSampleCommunicator.swift */; };
+		ED034CE41C0D0010000E72A2 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED034CE31C0D0010000E72A2 /* UIApplicationExtension.swift */; };
+		ED034CEE1C0D20D3000E72A2 /* TwitchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED034CED1C0D20D3000E72A2 /* TwitchModels.swift */; };
+		ED034CF01C0D22FA000E72A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED034CEF1C0D22FA000E72A2 /* Constants.swift */; };
+		ED034CF21C0D501C000E72A2 /* TwitchGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED034CF11C0D501C000E72A2 /* TwitchGameCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		897F2F4B3FDC2FC3869DA6EB /* Pods_TwitchSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A186A89423888C314BD7130C /* Pods-TwitchSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchSample/Pods-TwitchSample.release.xcconfig"; sourceTree = "<group>"; };
+		A40BB6C7DDAA4B17D0D01680 /* Pods-TwitchSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchSample/Pods-TwitchSample.debug.xcconfig"; sourceTree = "<group>"; };
+		ED034CC01C0CAB66000E72A2 /* TwitchSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED034CC31C0CAB66000E72A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED034CC51C0CAB66000E72A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ED034CC81C0CAB66000E72A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED034CCA1C0CAB66000E72A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TwitchSample/Assets.xcassets; sourceTree = "<group>"; };
+		ED034CCD1C0CAB66000E72A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED034CCF1C0CAB66000E72A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED034CDD1C0CF683000E72A2 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		ED034CE01C0CFE5C000E72A2 /* TwitchSampleCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchSampleCommunicator.swift; sourceTree = "<group>"; };
+		ED034CE31C0D0010000E72A2 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		ED034CED1C0D20D3000E72A2 /* TwitchModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchModels.swift; sourceTree = "<group>"; };
+		ED034CEF1C0D22FA000E72A2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED034CF11C0D501C000E72A2 /* TwitchGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchGameCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED034CBD1C0CAB66000E72A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999439F5B21AD8F670DBBD5B /* Pods_TwitchSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AEA575CA747FEFA1DC0BB61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A40BB6C7DDAA4B17D0D01680 /* Pods-TwitchSample.debug.xcconfig */,
+				A186A89423888C314BD7130C /* Pods-TwitchSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAF2924ECFC3D82C49FF97A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				897F2F4B3FDC2FC3869DA6EB /* Pods_TwitchSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED034CB71C0CAB66000E72A2 = {
+			isa = PBXGroup;
+			children = (
+				ED034CC21C0CAB66000E72A2 /* TwitchSample */,
+				ED034CCA1C0CAB66000E72A2 /* Assets.xcassets */,
+				ED034CC11C0CAB66000E72A2 /* Products */,
+				8AEA575CA747FEFA1DC0BB61 /* Pods */,
+				AAF2924ECFC3D82C49FF97A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED034CC11C0CAB66000E72A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED034CC01C0CAB66000E72A2 /* TwitchSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED034CC21C0CAB66000E72A2 /* TwitchSample */ = {
+			isa = PBXGroup;
+			children = (
+				ED034CEC1C0D1FD3000E72A2 /* Utility */,
+				ED034CE61C0D1EAC000E72A2 /* Objects */,
+				ED034CDA1C0CABBD000E72A2 /* StoryBoards */,
+				ED034CD81C0CAB99000E72A2 /* ViewControllers */,
+				ED034CC31C0CAB66000E72A2 /* AppDelegate.swift */,
+				ED034CCF1C0CAB66000E72A2 /* Info.plist */,
+			);
+			path = TwitchSample;
+			sourceTree = "<group>";
+		};
+		ED034CD81C0CAB99000E72A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED034CC51C0CAB66000E72A2 /* MainViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED034CDA1C0CABBD000E72A2 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				ED034CC71C0CAB66000E72A2 /* Main.storyboard */,
+				ED034CCC1C0CAB66000E72A2 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		ED034CDF1C0CFE45000E72A2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ED034CDD1C0CF683000E72A2 /* Reachability.swift */,
+				ED034CE01C0CFE5C000E72A2 /* TwitchSampleCommunicator.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		ED034CE21C0CFFEF000E72A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED034CE31C0D0010000E72A2 /* UIApplicationExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		ED034CE61C0D1EAC000E72A2 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				ED034CED1C0D20D3000E72A2 /* TwitchModels.swift */,
+				ED034CEF1C0D22FA000E72A2 /* Constants.swift */,
+				ED034CF11C0D501C000E72A2 /* TwitchGameCell.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		ED034CEC1C0D1FD3000E72A2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ED034CDF1C0CFE45000E72A2 /* Network */,
+				ED034CE21C0CFFEF000E72A2 /* Extensions */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED034CBF1C0CAB66000E72A2 /* TwitchSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED034CD21C0CAB66000E72A2 /* Build configuration list for PBXNativeTarget "TwitchSample" */;
+			buildPhases = (
+				FABD4211B27E7A6CC81BA1A3 /* Check Pods Manifest.lock */,
+				ED034CBC1C0CAB66000E72A2 /* Sources */,
+				ED034CBD1C0CAB66000E72A2 /* Frameworks */,
+				ED034CBE1C0CAB66000E72A2 /* Resources */,
+				0852ED48A1459670D1892054 /* Embed Pods Frameworks */,
+				A97ADD4DE9064CDD809EF6D7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitchSample;
+			productName = TwitchSample;
+			productReference = ED034CC01C0CAB66000E72A2 /* TwitchSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED034CB81C0CAB66000E72A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "abdullah cengiz";
+				TargetAttributes = {
+					ED034CBF1C0CAB66000E72A2 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = ED034CBB1C0CAB66000E72A2 /* Build configuration list for PBXProject "TwitchSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED034CB71C0CAB66000E72A2;
+			productRefGroup = ED034CC11C0CAB66000E72A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED034CBF1C0CAB66000E72A2 /* TwitchSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED034CBE1C0CAB66000E72A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED034CCE1C0CAB66000E72A2 /* LaunchScreen.storyboard in Resources */,
+				ED034CCB1C0CAB66000E72A2 /* Assets.xcassets in Resources */,
+				ED034CC91C0CAB66000E72A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0852ED48A1459670D1892054 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchSample/Pods-TwitchSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A97ADD4DE9064CDD809EF6D7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchSample/Pods-TwitchSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FABD4211B27E7A6CC81BA1A3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED034CBC1C0CAB66000E72A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED034CE41C0D0010000E72A2 /* UIApplicationExtension.swift in Sources */,
+				ED034CE11C0CFE5C000E72A2 /* TwitchSampleCommunicator.swift in Sources */,
+				ED034CEE1C0D20D3000E72A2 /* TwitchModels.swift in Sources */,
+				ED034CC61C0CAB66000E72A2 /* MainViewController.swift in Sources */,
+				ED034CF21C0D501C000E72A2 /* TwitchGameCell.swift in Sources */,
+				ED034CF01C0D22FA000E72A2 /* Constants.swift in Sources */,
+				ED034CDE1C0CF683000E72A2 /* Reachability.swift in Sources */,
+				ED034CC41C0CAB66000E72A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED034CC71C0CAB66000E72A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED034CC81C0CAB66000E72A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED034CCC1C0CAB66000E72A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED034CCD1C0CAB66000E72A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED034CD01C0CAB66000E72A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED034CD11C0CAB66000E72A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED034CD31C0CAB66000E72A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40BB6C7DDAA4B17D0D01680 /* Pods-TwitchSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TwitchSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trivato.TwitchSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED034CD41C0CAB66000E72A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A186A89423888C314BD7130C /* Pods-TwitchSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TwitchSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trivato.TwitchSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED034CBB1C0CAB66000E72A2 /* Build configuration list for PBXProject "TwitchSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED034CD01C0CAB66000E72A2 /* Debug */,
+				ED034CD11C0CAB66000E72A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED034CD21C0CAB66000E72A2 /* Build configuration list for PBXNativeTarget "TwitchSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED034CD31C0CAB66000E72A2 /* Debug */,
+				ED034CD41C0CAB66000E72A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED034CB81C0CAB66000E72A2 /* Project object */;
+}
